@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>대영종합물류(주) | 윤리경영</title>
+<style>
+:root{--navy:#10253f;--blue:#1e5d91;--light:#f5f8fb;--line:#dbe3eb;--text:#263544}
+*{box-sizing:border-box} body{margin:0;font-family:"Noto Sans KR","Malgun Gothic",sans-serif;color:var(--text);background:#fff;line-height:1.8}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.nav{max-width:1180px;margin:auto;display:flex;align-items:center;min-height:76px;padding:0 22px}
+.logo{font-weight:800;color:var(--navy);font-size:21px;white-space:nowrap}.logo small{display:block;font-size:10px;letter-spacing:2px;color:#7890a6;line-height:1}
+nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}nav button{border:0;background:none;padding:11px 14px;font-size:15px;color:#33475b;cursor:pointer;border-radius:6px}nav button:hover{background:var(--light);color:var(--blue)}
+.hero{background:linear-gradient(120deg,#10253f,#244f72);color:white;padding:78px 22px 74px}
+.hero-inner{max-width:1180px;margin:auto}.hero h1{font-size:42px;margin:0 0 12px}.hero p{margin:0;color:#dce8f2;font-size:18px}.badge{display:inline-block;border:1px solid #9fb9cf;padding:4px 12px;border-radius:30px;font-size:12px;margin-bottom:18px}
+.container{max-width:1000px;margin:auto;padding:55px 22px 90px}.page{display:none}.page.active{display:block}
+h2{font-size:30px;color:var(--navy);margin:0 0 10px;border-left:5px solid var(--blue);padding-left:14px}h3{color:var(--blue);margin-top:34px;font-size:20px}
+.lead{color:#637385;margin-bottom:34px}.card{background:var(--light);border:1px solid var(--line);padding:25px;border-radius:12px;margin:18px 0}.card strong{color:var(--navy)}
+ol{padding-left:24px}li{margin:8px 0}.section{margin:30px 0}.quote{font-size:18px;color:#334c63;font-weight:600}
+footer{background:#10253f;color:#cbd8e4;padding:35px 22px;text-align:center;font-size:13px}
+.modal{display:none;position:fixed;inset:0;background:rgba(8,19,31,.72);z-index:100;padding:25px;overflow:auto}.modal.open{display:block}
+.modal-box{background:white;max-width:900px;margin:25px auto;border-radius:12px;overflow:hidden;box-shadow:0 20px 60px #0005}
+.modal-head{padding:20px 25px;background:var(--navy);color:#fff;display:flex;justify-content:space-between;align-items:center}.modal-head h2{color:#fff;border:0;padding:0;margin:0;font-size:24px}.close{border:0;background:none;color:white;font-size:30px;cursor:pointer}.modal-body{padding:30px 34px;white-space:normal}.modal-body p{margin:0 0 18px}
+.notice{background:#eef5fa;border-left:4px solid var(--blue);padding:14px 18px;margin:20px 0}
+@media(max-width:800px){.nav{align-items:flex-start;flex-direction:column;padding:15px 18px}.logo{margin-bottom:8px}nav{margin-left:0;width:100%;gap:0}nav button{padding:8px 9px;font-size:13px}.hero{padding:50px 20px}.hero h1{font-size:31px}.container{padding-top:38px}.modal{padding:10px}.modal-body{padding:22px 20px}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<div class="logo">대영종합물류(주)<small>DAEYOUNG LOGISTICS</small></div>
+<nav>
+<button onclick="openCEO()">CEO 선언</button>
+<button onclick="showPage('ethics')">사내윤리경영</button>
+<button onclick="showPage('code')">윤리실천행동강령</button>
+<button onclick="showPage('charter')">윤리헌장</button>
+<button onclick="showPage('human')">인권헌장</button>
+</nav></div></header>
+
+<section class="hero"><div class="hero-inner">
+<span class="badge">ETHICAL MANAGEMENT · HUMAN RIGHTS</span>
+<h1>신뢰를 운송하는 기업</h1>
+<p>투명한 경영과 존중의 기업문화를 바탕으로 고객과 사회의 신뢰를 쌓아갑니다.</p>
+</div></section>
+
+<main class="container">
+<section id="home" class="page active">
+<h2>윤리경영 · 인권경영</h2>
+<p class="lead">대영종합물류(주)는 법과 원칙을 준수하고 임직원과 고객, 협력사 및 지역사회를 존중하는 책임 있는 기업이 되겠습니다.</p>
+<div class="card"><strong>CEO 선언</strong><br>윤리경영을 기업의 기본가치로 삼고 투명하고 깨끗한 회사를 함께 만들어가겠습니다.</div>
+<div class="card"><strong>사내윤리경영</strong><br>공정·투명·책임·존중을 핵심 원칙으로 윤리적 의사결정과 준법경영을 실천합니다.</div>
+<div class="card"><strong>인권헌장</strong><br>모든 임직원의 존엄과 가치를 존중하고 안전하고 건강한 일터를 만들어갑니다.</div>
+</section>
+
+<section id="ethics" class="page">
+<h2>사내윤리경영</h2><p class="lead">공정하고 투명한 경영을 통해 신뢰받는 기업문화를 만들어갑니다.</p>
+<div class="section"><h3>1. 윤리경영의 기본원칙</h3>
+<div class="card"><strong>공정과 투명</strong><br>업무를 수행함에 있어 법령과 회사의 규정을 준수하고, 모든 업무를 공정하고 투명하게 처리합니다.</div>
+<div class="card"><strong>청렴과 책임</strong><br>금품·향응·부정한 청탁을 배격하고, 자신의 업무와 의사결정에 책임을 다합니다.</div>
+<div class="card"><strong>상호존중</strong><br>임직원, 고객, 협력사 등 모든 이해관계자를 존중하며 차별과 괴롭힘이 없는 직장문화를 조성합니다.</div>
+<div class="card"><strong>안전과 준법</strong><br>운송업의 특성을 고려하여 안전수칙을 철저히 준수하고 관련 법령과 규정을 성실히 지킵니다.</div>
+<div class="card"><strong>사회적 책임</strong><br>지역사회와 함께 성장하며 환경보호와 사회적 책임을 실천합니다.</div></div>
+<div class="notice">국민권익위원회도 기업의 윤리경영을 부패위험 예방과 경영의 투명성 제고를 위한 내부 통제 및 자율준수 체계로 설명하고 있습니다.</div>
+</section>
+
+<section id="code" class="page">
+<h2>윤리실천행동강령</h2><p class="lead">대영종합물류(주)의 모든 임직원은 다음 행동강령을 성실히 준수한다.</p>
+<h3>1. 이해관계자와의 건전한 관계유지</h3><ol><li>정당한 업무수행에 지장을 줄 수 있는 금전대차, 청탁 등을 하지 않는다.</li><li>통상적인 수준의 기념품 및 선물을 제외한 어떠한 금품ㆍ접대ㆍ편의 등을 제공하거나 받지 않는다.</li><li>경조사는 업무에 영향을 줄 수 있는 이해관계자에게는 알리지 않으며, 경조금은 사회관례상 통상적인 수준을 초과하지 않도록 한다.</li><li>지연, 혈연, 학연 등을 이유로 특정 개인이나 법인을 우대하거나 차별하지 않는다.</li><li>임용ㆍ승진ㆍ전보 등 인사에 부당한 영향을 미치기 위한 청탁을 하지 않는다.</li><li>우월적 지위를 이용하여 부당행위를 하지 않는다.</li></ol>
+<h3>2. 이해관계 직무의 회피</h3><ol><li>자신의 직무가 이해관계자의 이해와 관련되는 경우 당해 업무에 대한 참여 및 의사결정을 회피하여야 한다.</li><li>이해관계로 직무를 회피하고자 하는 경우 상급자나 윤리실천책임자에게 통보하여야 한다.</li></ol>
+<h3>3. 정보의 기록관리 및 자원의 사용</h3><ol><li>회계기록 및 재무관리는 관련법령과 일반적으로 인정된 회계원칙 등에 따라 사실에 근거하여 정확하고 투명하게 기록ㆍ관리하여야 한다.</li><li>직무수행과 관련하여 알게 된 정보를 이용하여 주식 등 재산상 거래 또는 투자를 하거나 타인의 거래 또는 투자를 돕는 행위를 하여서는 아니 된다.</li><li>회사에서 제공하는 부동산, 동산, 물품과 비용 등을 정당한 사유 없이 사적인 용도로 사용ㆍ수익하여서는 아니 된다.</li></ol>
+<h3>4. 임직원의 자세</h3><ol><li>자유롭게 제안과 애로사항을 표시할 수 있는 분위기를 조성하여 조화로운 조직문화를 만들어 나간다.</li><li>상급자는 인재 육성을 위하여 하급자의 소질을 계발하고 적극적으로 지원하여야 한다.</li><li>친인척 등 개인적 친분이 있는 사람에게 이익을 주기 위해 권한을 남용하여서는 아니 된다.</li><li>안전과 관련된 수칙을 철저히 준수하고 각종 사고를 미연에 방지한다.</li></ol>
+<h3>5. 건전한 사회생활</h3><ol><li>사회활동 및 상거래와 관련하여 기업이 지켜야 할 모든 국내외 법률, 규칙, 자치규범 등을 성실히 준수한다.</li><li>기업윤리와 상도에 어긋나는 부정한 방법으로 이익을 취하지 않는다.</li><li>경쟁을 상호 발전의 기회로 인식하고 시장경제질서를 저해하는 일체의 행위를 하지 않는다.</li><li>사회 봉사활동 및 문화사업에 적극적이며 자발적으로 참여하여 기업의 사회적 책임을 실천한다.</li></ol>
+<h3>6. 윤리경영의 정착</h3><ol><li>윤리경영을 실천하는 기업문화를 정착시켜 나간다.</li><li>본인이나 타인의 행위가 윤리강령에 저촉된 사실을 알게 된 경우 상급자 또는 윤리실천책임자에게 알려야 한다.</li><li>윤리강령의 효율적인 운영을 위하여 별도의 지침 등을 정할 수 있다.</li></ol>
+</section>
+
+<section id="charter" class="page">
+<h2>윤리헌장</h2>
+<p class="lead">우리 대영종합물류(주)는 윤리적·도덕적 가치관을 바탕으로 공정하고 투명한 경영활동을 지향하며, 제반 법규정과 법의 정신을 준수하는 기업 활동을 통하여 국가와 사회로부터 신망 받는 기업으로서의 역할과 책임을 다하고자 한다.</p>
+<h3>첫째, 국가와 사회에의 기여</h3><p>우리는 국가정책을 존중하고 제반 법규와 사회 윤리규범을 준수한다. 우리는 건전한 경제활동을 추구하며 환경보존 및 사회공헌에 앞장서 국가의 지속가능한 발전에 기여한다.</p>
+<h3>두 번째, 고객의 권익 증진</h3><p>우리는 최상의 서비스로 고객의 권익을 증진시킨다.</p>
+<h3>세 번째, 참된 직원 윤리 의식 제고</h3><p>우리는 임직원 개개인을 인격체로써 존중하고 자신의 맡은 바 임무를 성실하고 책임있게 수행하며 공익과 질서를 앞세우는 참된 인간상을 표상으로 삼는다.</p>
+<h3>네 번째, 투명경영의 정착</h3><p>우리는 모든 이해관계자로부터 직무와 관련하여 공정성을 저해할 수 있는 일체의 부정청탁을 배격하고, 부정한 이익을 수수하거나 뇌물을 공여하지 않는다.</p>
+</section>
+
+<section id="human" class="page">
+<h2>인권헌장</h2><p class="lead">대영종합물류(주)는 모든 임직원의 존엄과 가치를 존중하고, 서로 신뢰하며 함께 성장하는 기업문화를 만들어 나가기 위해 다음과 같이 인권헌장을 제정하고 실천한다.</p>
+<div class="card"><strong>하나. 인간의 존엄과 가치를 존중한다.</strong><br>모든 임직원을 존엄한 인격체로 존중하며, 서로의 인권과 기본적인 권리를 보호한다.</div>
+<div class="card"><strong>하나. 차별하지 않는다.</strong><br>성별, 나이, 출신, 장애, 국적, 종교, 학력, 고용형태 등을 이유로 부당하게 차별하지 않으며 공정하게 대우한다.</div>
+<div class="card"><strong>하나. 서로를 존중하는 직장문화를 만든다.</strong><br>폭언, 폭행, 괴롭힘, 성희롱 등 타인의 인격을 침해하는 행위를 하지 않으며, 상호 배려와 존중을 바탕으로 소통한다.</div>
+<div class="card"><strong>하나. 안전하고 건강한 근무환경을 조성한다.</strong><br>운송업의 특성을 고려하여 임직원의 안전과 건강을 최우선으로 생각하고, 안전한 작업환경과 근무조건을 마련하기 위해 노력한다.</div>
+<div class="card"><strong>하나. 정당한 근로환경과 권리를 보장한다.</strong><br>근로시간, 휴게, 휴일 등 법에서 정한 근로자의 권리를 존중하고, 정당한 근로조건이 지켜질 수 있도록 노력한다.</div>
+<div class="card"><strong>하나. 의견을 자유롭게 말할 수 있는 환경을 만든다.</strong><br>임직원이 업무와 관련한 의견이나 고충을 자유롭게 제기할 수 있도록 하며, 의견을 제기했다는 이유로 불이익을 주지 않는다.</div>
+<div class="card"><strong>하나. 인권침해를 예방하고 적극적으로 개선한다.</strong><br>인권침해가 발생하지 않도록 예방하고, 문제가 발생한 경우 신속하고 공정하게 해결하기 위해 노력한다.</div>
+<p class="quote">대영종합물류(주)는 위의 원칙을 모든 임직원이 함께 실천하여 서로 존중하고 신뢰하는 안전하고 건강한 일터를 만들어 나갈 것을 약속한다.</p>
+<p style="text-align:right;font-weight:bold;margin-top:35px">대영종합물류(주) 김 동 은 대표이사<br>2026년 10월 01일</p>
+</section>
+</main>
+
+<footer>대영종합물류(주) · 윤리경영 · 인권경영</footer>
+
+<div id="ceoModal" class="modal" onclick="if(event.target===this)closeCEO()">
+<div class="modal-box"><div class="modal-head"><h2>CEO 선언</h2><button class="close" onclick="closeCEO()">×</button></div>
+<div class="modal-body">
+<p><strong>사랑하는 임직원 여러분,</strong></p>
+<p>존경받는 기업은 매출과 수익의 크기로 정의되지 않습니다.</p>
+<p>기업은 고객, 임직원, 주주·투자자, 협력사 및 사회 등 모든 이해관계자로부터 얼마나 깊은 신뢰를 얻느냐에 따라 그 가치가 평가될 수 있습니다.</p>
+<p>이러한 신뢰는 우연히 얻어질 수 있는 것이 아닙니다.</p>
+<p>지속적으로 실천할 때에 비로소 신뢰할 수 있는 관계를 만들어 갈 수 있습니다.</p>
+<p>오늘날 우리를 둘러싼 경영환경은 하루가 다르게 급변하고 있으며, 우리 모두에게 더욱더 과감한 변화와 혁신을 요구하고 있습니다.</p>
+<p>이와 같은 시대적 상황 변화에 따라 기업 경쟁력 요소로 부상하고 있는 것이 바로 “윤리경영”입니다.</p>
+<p>윤리경영은 현재 모든 기업들이 경영활동의 기본가치로 설정하여 실천해오고 있는 필수적인 경영전략 중의 하나입니다.</p>
+<p>우리도 이제 새로운 도약을 위해 윤리경영을 적극적으로 실천해야 할 때입니다.</p>
+<p>윤리는 특성상 ‘나 하나쯤이야’ 하며 단 한 사람이라도 어긴다면 바로 그 즉시부터 걷잡을 수 없이 무너지는 도미노 현상을 불러일으킵니다.</p>
+<p>부패를 뜻하는 영어 Corruption은 ‘함께’라는 뜻의 ‘Cor’과 ‘파멸’이라는 뜻의 ‘rupt’가 조합된 라틴어에서 나온 단어로서, 즉, 부패 행위자뿐 아니라 조직과 사회 전체가 무너지게 된다는 뜻을 가지고 있습니다. 이미 오래 전부터 부패를 막지 못하면 그 구성원 모두가 같이 쓰러진다는 진리를 선각자들은 알고 있었던 것입니다. 위대한 인물이 한 점 부끄럼 없는 삶을 살아왔듯이 기업사에서도 위대한 기업들은 투명하고 깨끗한 윤리의식과 내부질서의 정립을 통해 기업 이미지를 차별화했습니다.</p>
+<p>우리 모두가 윤리 규범을 지키고 실천할 때 진정으로 신뢰와 존경을 받는 기업이 될 것입니다.</p>
+<p>이제 윤리경영 실천은 기업의 생존과 지속성장을 위하여 필수적인 과제입니다.</p>
+<p>우리 모두 뜻을 모아 윤리경영을 실천함으로써 더욱 투명하고 깨끗한 대영종합물류주식회사를 만듭시다.</p>
+<p><strong>우리 스스로 자긍심을 가질 수 있는 회사,<br>고객으로부터 신뢰 받고 사랑받는 회사를 모두 함께 만들어 나갑시다.</strong></p>
+<p>감사합니다.</p>
+</div></div></div>
+
+<script>
+function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
+function openCEO(){document.getElementById('ceoModal').classList.add('open');document.body.style.overflow='hidden'}
+function closeCEO(){document.getElementById('ceoModal').classList.remove('open');document.body.style.overflow=''}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCEO()})
+</script>
+</body></html>
